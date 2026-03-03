@@ -363,6 +363,8 @@ input:focus{
 .card-footer-comment{
     font-size: 9px;
 }
+
+/* Media Query */
 @media (max-width: 1024px){
 
     .nav-left{
