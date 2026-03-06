@@ -321,6 +321,7 @@ input:focus{
 }
 .card img{
     width: 100%;
+    object-fit: cover;
 }
 
 .card-content{
@@ -776,13 +777,109 @@ input:focus{
 
     p{
         margin-bottom: 0;
-        color: #969696;
+        color: #000000;
     }
     svg{
-        color: #969696;
+        color: #000000;
     }
 }
 
+/* footer */
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.footer-socials-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.ft-social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(48, 48, 48);
+
+    svg{
+        color: #ffffff;
+    }
+}
+
+.footer-menu{
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    .footer-menu-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0.6rem;
+
+        p{
+            color: #ffffff;
+            font-size: small;
+        }
+    }
+}
+.copyright{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        font-size: small;
+
+        span{
+        color: #ffffff;
+        }
+    }
+}
+.go-to-top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .go-to-top-icon{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        color: #666;
+        font-size: small;
+
+        svg{
+            rotate: 180deg;
+        }
+    }
+}
 /* Media Query */
 @media (max-width: 1024px){
 
